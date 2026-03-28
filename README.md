@@ -3,7 +3,7 @@
 A 100% local Retrieval-Augmented Generation (RAG) system. This agent is optimized for privacy , specifically tuned for hardware with limited VRAM (RTX 3050 4GB) and high system RAM (24GB).
 (IF YOU HAVE LESS RAM THEN GO WITH OTHER COMPATIBLE MODELS AND JUST UPDATE THE 'config.py' FILE. )
 
-## 🚀 Key Features
+## Key Features
 
 - **Privacy First:** 100% local processing. No data ever leaves your machine.
 - **Model Routing:** 
@@ -12,7 +12,7 @@ A 100% local Retrieval-Augmented Generation (RAG) system. This agent is optimize
 - **Ephemeral Sessions:** Automatically wipes the vector database and uploaded files at the start of every new browser session to ensure data hygiene.
 - **Streamlit UI:** Easy-to-use Streamlit dashboard for multi-PDF uploads and real-time chatting.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Orchestration:** LangChain
 - **Models (via Ollama):** 
@@ -23,7 +23,7 @@ A 100% local Retrieval-Augmented Generation (RAG) system. This agent is optimize
 - **Vector Database:** ChromaDB (via `langchain-chroma`)
 - **Frontend:** Streamlit
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### 1. Prerequisites
 Ensure you have [Ollama](https://ollama.com/) installed and running.
@@ -56,7 +56,7 @@ streamlit run app.py
    - **Force Deep Reasoning:** Manually trigger the DeepSeek-R1 engine for every query.
 4. **Reset:** Use the **"🗑️ Clear Database/Session"** button or simply restart your browser session to wipe all local data.
 
-## 📁 Project Structure
+## Project Structure
 - `app.py`: Streamlit frontend and session management.
 - `rag.py`: The core LangChain logic and hybrid routing engine.
 - `ingest.py`: Document processing and vector store pipeline.

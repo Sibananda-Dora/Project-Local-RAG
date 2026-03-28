@@ -1,7 +1,8 @@
 # Private-Local RAG Agent
 
-A 100% local Retrieval-Augmented Generation (RAG) system. This agent is optimized for privacy , specifically tuned for hardware with limited VRAM (RTX 3050 4GB) and high system RAM (24GB).
-(IF YOU HAVE LESS RAM THEN GO WITH OTHER COMPATIBLE MODELS AND JUST UPDATE THE 'config.py' FILE. )
+A 100% local Retrieval-Augmented Generation (RAG) system. This agent is optimized for privacy , specifically tuned for hardware with limited VRAM (RTX 3050 4GB) and system RAM (24GB).
+
+**(IF YOU HAVE LESS RAM THEN GO WITH OTHER COMPATIBLE MODELS AND JUST UPDATE THE 'config.py' FILE. )**
 
 ## Key Features
 
@@ -47,14 +48,14 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## 📖 How to Use
+##  How to Use
 
 1. **Upload:** Drag and drop one or multiple PDF files into the sidebar/main area.
-2. **Process:** Click **"🚀 Process & Ingest Documents"**. This will chunk the text, generate embeddings locally, and build your search index.
+2. **Process:** Click **" Process & Ingest Documents"**. This will chunk the text, generate embeddings locally, and build your search index.
 3. **Chat:** Ask questions! 
    - **Auto-Route:** Let the system decide which model is best for your question.
    - **Force Deep Reasoning:** Manually trigger the DeepSeek-R1 engine for every query.
-4. **Reset:** Use the **"🗑️ Clear Database/Session"** button or simply restart your browser session to wipe all local data.
+4. **Reset:** Use the **" Clear Database/Session"** button or simply restart your browser session to wipe all local data.
 
 ## Project Structure
 - `app.py`: Streamlit frontend and session management.

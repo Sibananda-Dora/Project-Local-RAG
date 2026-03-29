@@ -4,5 +4,5 @@ REASONING_MODEL = "deepseek-r1:7b"
 CHROMA_PATH = "./chroma_db"
 DATA_PATH = "./data"
 OLLAMA_BASE_URL = "http://localhost:11434" 
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 200
+CHUNK_SIZE = 600
+CHUNK_OVERLAP = 150

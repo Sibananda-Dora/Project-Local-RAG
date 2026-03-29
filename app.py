@@ -23,7 +23,7 @@ if "initialized" not in st.session_state:
 
 # 2. Sidebar Configuration
 st.sidebar.title("RAG Settings")
-mode = st.sidebar.radio("Reasoning Mode", ["Auto-Route", "Force Deep Reasoning"])
+mode = st.sidebar.radio("Reasoning Mode", ["Smart Routing", "Force Deep Reasoning"])
 
 # Clear Database Functionality
 if st.sidebar.button("🗑️ Clear Database/Session"):
@@ -49,7 +49,7 @@ def get_engine():
 engine = get_engine()
 
 # 4. Main UI
-st.title("🛡️ Private-Local Hybrid RAG Agent")
+st.title("Private-Local RAG Agent")
 st.markdown("---")
 
 # File Uploader
@@ -64,7 +64,7 @@ if uploaded_files:
         with open(os.path.join(DATA_PATH, uploaded_file.name), "wb") as f:
             f.write(uploaded_file.getbuffer())
     
-    if st.button("🚀 Process & Ingest Documents"):
+    if st.button("Process & Ingest Documents"):
         with st.spinner("Ingesting documents into local vector store..."):
             ingest.main()
             st.cache_resource.clear() # Reset engine cache after ingestion

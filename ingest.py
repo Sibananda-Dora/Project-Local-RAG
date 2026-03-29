@@ -53,7 +53,6 @@ def main():
     print(f"Creating vector database at {CHROMA_PATH} using {EMBEDDING_MODEL}...")
     embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL, base_url=OLLAMA_BASE_URL)
     
-    # Save to disk
     vector_db = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
